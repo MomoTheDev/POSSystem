@@ -38,4 +38,4 @@ Output for 2nd Item/Product:
 
 
 # Construction
-The `PropertyContainer`-Clas Constructor is `new PropertyContainer("key", "value")`
+The `PropertyContainer`-Class Constructor is `new PropertyContainer("key", "value")`

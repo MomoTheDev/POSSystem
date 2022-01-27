@@ -18,7 +18,7 @@ private void registerItems() {
 
 Output for 1st Item/Product:
 ```log
-[POS] > some-Product 1
+[POS] > some product 1
 
 
 [POS] Properties of Item: some-product 1
@@ -28,7 +28,7 @@ Output for 1st Item/Product:
 
 Output for 2nd Item/Product:
 ```log
-[POS] > some-Product 2
+[POS] > some product 2
 
 
 [POS] Properties of Item: some-product 2

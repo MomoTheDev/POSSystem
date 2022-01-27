@@ -1,5 +1,5 @@
 # POSSystem
-A leightweight property-storing POSSystem coded in Java
+A lightweight property-storing POSSystem coded in Java
 
 # Installation
 1. Open the project in your favorite Java IDE

@@ -1,4 +1,4 @@
-# POSSystem
+# POS-System
 A lightweight, property-mapping and recalling POS-System, developed in Java
 
 # Installation

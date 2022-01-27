@@ -38,7 +38,7 @@ Output for 2nd Item/Product:
 
 
 # Updating
-I have enough time to manage this library by my own, you can suggest me some features you'd like or maybe report some bugs as well.
+I have enough time to manage this project by my own, you can suggest me some features you'd like or maybe report some bugs as well.
 You can give suggestions and report bugs to me via Discord (MomoTheSiM#6478).
 
 # Construction

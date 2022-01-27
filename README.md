@@ -1,5 +1,5 @@
 # POSSystem
-A lightweight, property-mapping and recalling, POS-System, developed in Java
+A lightweight, property-mapping and recalling POS-System, developed in Java
 
 # Installation
 1. Open the project in your favorite Java IDE

@@ -16,5 +16,26 @@ private void registerItems() {
 }
 ```
 
+Output for 1st Item/Product:
+```log
+[POS] > some-Product 1
+
+
+[POS] Properties of Item: some-product 1
+[POS] [anotherProperty : anotherValue]
+[POS] [someProperty : someValue]
+```
+
+Output for 2nd Item/Product:
+```log
+[POS] > some-Product 2
+
+
+[POS] Properties of Item: some-product 2
+[POS] [weight (pounds) : 8.6]
+[POS] [height : 54cm]
+```
+
+
 # Construction
 The `PropertyContainer`-Clas Constructor is `new PropertyContainer("key", "value")`

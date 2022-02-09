@@ -11,7 +11,7 @@ A lightweight, property-mapping and recalling POS-System, developed in Java
 PS: This is in the `POSSystem` Class
 ```java
 private void registerItems() {
-      registerItem("some Product_1", mapper.new PropertyContainer("someProperty", "someValue"), mapper.new PropertyContainer("anotherProperty", "anotherValue"));
+      registerItem("some-Product 1", mapper.new PropertyContainer("someProperty", "someValue"), mapper.new PropertyContainer("anotherProperty", "anotherValue"));
       registerItem("some-Product 2", mapper.new PropertyContainer("weight (pounds)", 8.6f), mapper.new PropertyContainer("height", "54cm"));
 }
 ```

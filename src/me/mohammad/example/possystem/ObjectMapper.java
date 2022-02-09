@@ -9,8 +9,8 @@ public class ObjectMapper {
 	
 	protected ObjectMapper(final POSSystem posSystem) {
 		this.posSystem = posSystem;
-		if (this.posSystem != POSSystem.lastInstance) {
-			System.out.println(POSSystem.prefix + "Unknown reference!");
+		if (!(this.posSystem.equals(POSSystem.lastInstance))) {
+			System.out.printf("%sUnknown reference!", POSSystem.prefix);
 		}
 	}
 	

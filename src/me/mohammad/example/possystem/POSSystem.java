@@ -40,7 +40,7 @@ public class POSSystem extends Thread {
 	
 	@SuppressWarnings("unchecked")
 	protected void handleRequest() {
-		System.out.print(prefix + "> ");
+		System.out.printf("%s> ", prefix);
 		final String nextLine = scanner.nextLine();
 		if (nextLine.equalsIgnoreCase("exit")) {
 			isRunning = false;
@@ -54,17 +54,17 @@ public class POSSystem extends Thread {
 			}
 			return;
 		}
-		System.out.println("\n");
+		System.out.print("\n\n");
 		if (!(items.containsKey(nextLine.toLowerCase().replaceAll("-", "_").replaceAll(" ", "_")))) {
-			System.out.println(prefix + "Unknown Item: " + nextLine);
+			System.out.printf("%sUnknown Item: %s\n", prefix, nextLine);
 			return;
 		}
-		System.out.println(prefix + "Properties of Item: " + nextLine);
+		System.out.printf("%sProperties of Item: %s\n", prefix, nextLine);
 		final Map<String, Object> properties = (Map<String, Object>) items.get(nextLine.toLowerCase().replaceAll("-", "_").replaceAll(" ", "_"));
 		for (final Map.Entry<String, Object> propertyEntry : properties.entrySet()) {
-			System.out.println(prefix + String.format("[%s : %s]", propertyEntry.getKey(), propertyEntry.getValue()));
+			System.out.printf("%s[%s : %s]\n", prefix, propertyEntry.getKey(), propertyEntry.getValue());
 		}
-		System.out.println("\n");
+		System.out.print("\n\n");
 	}
 	
 	@Override
@@ -74,17 +74,17 @@ public class POSSystem extends Thread {
 		} catch (InterruptedException | IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println(prefix + "Welcome to Momo's POSSystem");
+		System.out.printf("%sWelcome to Momo's POSSystem\n", prefix);
 		while (isRunning)
 			handleRequest();
 		if (!(isRunning)) {
 			try {
-				System.out.println(prefix + "Exit command detected, exiting...");
+				System.out.printf("%sExit command detected, exiting...\n", prefix);
 				lastInstance.join(500);
 				System.exit(0);
 				return;
 			} catch (InterruptedException e) {
-				System.out.println("An Error occoured while exiting, returning...");
+				System.out.printf("%sAn Error occoured while exiting, returning...\n", prefix);
 				System.exit(1);
 				return;
 			}
